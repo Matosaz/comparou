@@ -1,7 +1,7 @@
 # netlify.toml
 
 [build]
-  command = "npm install && npm run build"
+  command = "npm run build && npm i"
   publish = "dist"
 
 [[redirects]]
