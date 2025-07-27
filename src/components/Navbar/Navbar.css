@@ -1,0 +1,108 @@
+/* Barra principal */
+.navbar {
+    padding: 30px 200px;
+}
+
+/* Container interno */
+.navbar-container {
+    display: flex;
+    padding: 20px 200px;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+/* Logo */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar-title {
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+/* Links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-link {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito hover sem sumir o texto */
+.navbar-link:hover,
+.dropdown-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+
+.dropdown-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+/* Estilos do dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    margin-left: -5px;
+    background: #0A369D;
+    border-radius: 10px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

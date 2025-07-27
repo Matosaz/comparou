@@ -1,0 +1,12 @@
+body{
+  background-color: #0A369D
+
+}
+
+.searchBar{
+  background-color: rgba(124, 124, 124, 0.575);
+  border-radius: 120px;
+  max-width: 600px;
+  display: flex;
+ margin: 0 auto;
+}
